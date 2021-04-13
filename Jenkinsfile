@@ -8,9 +8,7 @@ stages
      { steps  { echo "code is downling"}   }                                    
    stage ('build the code')
       { steps  { echo "code is building"  }  } 
-  stage ('test the code')
-      { steps  { echo "code is testing"  }  }
-  
+    
  }
 
 }
