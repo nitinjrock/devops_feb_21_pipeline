@@ -1,11 +1,16 @@
-pipeline 
+pipeline
 {
-    agent any 
-    stages
+agent any
+stages                                                                          
 
-    {
-    stage ('SCM-checkout') 
-    { steps {"git branch: 'main', url: 'https://github.com/nitinjrock/devops_feb_21_pipeline.git"} }
+ {
+   stage ('scm check - download the code') 
+     { steps  { echo "code is downling"}   }                                    
+   stage ('build the code')
+      { steps  { echo "code is building"  }  } 
+  stage ('test the code')
+      { steps {echo "code is tested"} }
     
-    } 
+ }
+
 }
