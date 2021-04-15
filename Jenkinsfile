@@ -5,7 +5,7 @@ pipeline
 
     {
     stage('SCM-checkout') 
-    { step {git branch: 'main', url: 'https://github.com/nitinjrock/devops_feb_21_pipeline.git'} }
+    { step {"git branch: 'main', url: 'https://github.com/nitinjrock/devops_feb_21_pipeline.git"} }
     
     } 
 }
